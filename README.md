@@ -83,3 +83,16 @@ $ ./db-init.sh
 ```
 
 This starts Docker MySQL 5 container with MySQL server port 3306 published, creates database, user, database tables and seeds database with sample data. To alter table structure and initial data, see SQL files in `scripts/initdb.d` subdirecory.
+
+### Backend
+
+```
+$ go build
+$ ./fullstack-coding-test
+```
+
+This starts API server on [http://localhost:8080] connected to Docker MySQL container.
+
+Served endpoints:
+1. `GET /product` - returns list of products with delivery information
+2. `POST /product/:id` - updates product record by ID and returns updated record
