@@ -1,0 +1,21 @@
+.page {
+    width: 60%;
+    margin: 0 auto;
+}
+
+thead tr {
+    background: #ebebeb;
+}
+
+tbody tr:nth-of-type(even) {
+    background: #f8f8f8;
+}
+
+td, th {
+    padding: .5em 1em;
+}
+
+select {
+    background: none;
+    border: none;
+}
