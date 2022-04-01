@@ -91,8 +91,18 @@ $ go build
 $ ./fullstack-coding-test
 ```
 
-This starts API server on [http://localhost:8080] connected to Docker MySQL container.
+This starts API server on [http://localhost:8080](http://localhost:8080) connected to Docker MySQL container.
 
 Served endpoints:
 1. `GET /product` - returns list of products with delivery information
 2. `POST /product/:id` - updates product record by ID and returns updated record
+
+### Frontend
+
+```
+$ cd app
+$ npm install
+$ npm run build
+```
+
+This produces frontend production bundle and assets. Those are served by backend web server, no need to start a separate server for frontend - just visit [http://localhost:8080](http://localhost:8080) in your browser with backend server running.
