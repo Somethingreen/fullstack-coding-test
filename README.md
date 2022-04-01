@@ -72,3 +72,14 @@ Success Criteria
 - Create a pull request against `master` of your fork with a clear description of the change and purpose and merge it
 - The CI/CD file should be in the pull request
 - BONUS: a link such that makes the web application publicly accessibly
+
+## How to build and run
+
+### Database
+
+```
+$ cd scripts
+$ ./db-init.sh
+```
+
+This starts Docker MySQL 5 container with MySQL server port 3306 published, creates database, user, database tables and seeds database with sample data. To alter table structure and initial data, see SQL files in `scripts/initdb.d` subdirecory.
